@@ -4,11 +4,11 @@
 	width: 106px;
 	position: fixed;
 	right: 0;
-	
+
 	&.first {
 		top: 240px;
 	}
-	
+
 	&.second {
 		top: 355px;
 	}
@@ -21,17 +21,17 @@
 	left: 0;
 	bottom: 0;
 	overflow: hidden;
-	
+
 	a {
 		display: block;
 		width: 50%;
 		float: left;
-		
+
 		img {
 			display: block;
 		}
 	}
-	
+
 	&.single {
 		a {
 			width: 100%;
@@ -220,24 +220,27 @@ $orange: #ff5001;
 	@media (max-width: $viewport) {
 		display: none;
 	}
+
 	.id {
 		background: white;
 		padding: 10px 0 10px;
 
 		.logo {
 			display: block;
-			width: 170px;
-			height: 120px;
+			//width: 170px;//0.7058823529
+			//height: 120px;
+			width: 80px;
+			height: 58px;
 			margin: 0 auto;
 
-			@include svg(170px, 120px);
+			@include svg(80px, 58px);
 		}
 	}
 
 	#global {
 		background: $orange;
 		padding: 10px 0 10px;
-		
+
 		@media all and (-ms-high-contrast: none) {
 			padding: 16px 0 10px;
 		}
@@ -291,7 +294,7 @@ $orange: #ff5001;
 
 				&:hover {
 					opacity: 0.7;
-					
+
 					@media (max-width: $viewport) {
 						opacity: 1;
 					}

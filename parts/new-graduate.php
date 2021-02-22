@@ -12,7 +12,7 @@
 			映像表現を最大限に活かしたり、時には単体で映像演出を超越してメインになってしまう事もある<br>
 			サウンド・ランプの表現、それら全社員のアイディアを一つの遊技機としてまとめ創り上げていくのです！<br>
 			自分の考えたアイディアが全国のユーザーを魅了することを想像するとワクワクしませんか？</p>
-		<p class="text">これを見ていただきワクワクしたあなた、私たちとのシゲキ的な日々が待ってdsいます。<br>
+		<p class="text">これを見ていただきワクワクしたあなた、私たちとのシゲキ的な日々が待っています。<br>
 			これまで、見て、聞いて、感じてきたエンターテインメントのアイディアを、ぜひ、私たちサボハニで<br>
 			実際に形にして発信していきましょう！</p>
 		<p class="signature">代表取締役社長　白山雅貴</p>
@@ -40,6 +40,13 @@
 				</li>
 				<li>
 					<h3 class="ttl_icon">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/img/new-graduate/icon_5.png" alt="">
+						<span class="inner_text">実機開発部研修</span>
+					</h3>
+					<p class="text">実機開発の基礎を身に着けていただくために、大都技研にて研修を受けていただきます。</p>
+				</li>
+				<li>
+					<h3 class="ttl_icon">
 						<img src="<?php echo get_template_directory_uri(); ?>/assets/img/new-graduate/icon_3.png" alt="">
 						<span class="inner_text">企画グループ研修</span>
 					</h3>
@@ -55,7 +62,7 @@
 			</ul>
 		</div>
 	</div>
-	
+
 	<div id="requirement" class="anc"></div>
 	<!-- /#requirement.anc -->
 	<div class="requirement_sec">

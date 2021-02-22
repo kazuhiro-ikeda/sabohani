@@ -30,7 +30,7 @@
 				<?php get_template_part( 'drawer' ); ?>
 			</nav>
 
-			<address id="copyright">Copyright ©Sabohani.Inc, All rights reserved.</address>
+			<address id="copyright">©Sabohani Inc.</address>
 
 		</div>
 		<!-- /.inner -->
@@ -38,7 +38,7 @@
 	</footer>
 
 	<a href="#" id="pagetop"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/recruit/btn_pagetop.png" alt=""></a>
-	
+
 	<div class="block_p">
 		<?php if(is_page( 'recruit' )): ?>
 		<a href="<?php echo home_url(); ?>/recruit/new-graduate/" class="cv_btn first"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/recruit/cv_new-graduate.png" alt="新卒採用"></a>
@@ -46,22 +46,22 @@
 
 		<?php elseif(is_page( 'new-graduate' )): ?>
 		<a href="#requirement" class="cv_btn first"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/recruit/cv_new-graduate.png" alt="新卒採用"></a>
-		
+
 		<?php elseif(is_page( 'career' )): ?>
 		<a href="#requirement" class="cv_btn first"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/recruit/cv_career.png" alt="中途採用"></a>
-		
+
 		<?php elseif(is_singular( 'new_graduate' ) || is_singular( 'case' )): ?>
 		<a href="#requirements_anc" class="cv_btn first"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/recruit/cv_requirement.png" alt="募集要項を見る"></a>
 		<a href="<?php echo esc_url(home_url('/')); ?>?page_id=239&post_id=<?php echo $post->ID; ?>" class="cv_btn second"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/recruit/cv_web-entry.png" alt="カンタンWEB応募"></a>
-		
-		
+
+
 		<?php else: ?>
-		
+
 		<?php endif; ?>
-		
+
 	</div>
 	<!-- /.block_p -->
-	
+
 	<div class="block_s">
 		<?php if(is_page( 'recruit' )): ?>
 		<div class="cv_s">
@@ -69,33 +69,33 @@
 			<a href="<?php echo home_url(); ?>/recruit/career/" class="cv_btn_s"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/recruit/cv_career_s.png" alt="中途採用"></a>
 		</div>
 		<!-- /.cv_s single -->
-		
+
 
 		<?php elseif(is_page( 'new-graduate' )): ?>
 		<div class="cv_s single">
 			<a href="#requirement" class="cv_btn_s"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/recruit/cv_new-graduate_wide_s.png" alt="新卒採用"></a>
 		</div>
 		<!-- /.cv_s single -->
-		
-		
+
+
 		<?php elseif(is_page( 'career' )): ?>
 		<div class="cv_s single">
 			<a href="#requirement" class="cv_btn_s"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/recruit/cv_career_wide_s.png" alt="中途採用"></a>
 		</div>
 		<!-- /.cv_s single -->
-		
-		
+
+
 		<?php elseif(is_singular( 'new_graduate' ) || is_singular( 'case' )): ?>
 		<div class="cv_s">
 			<a href="#requirements_anc" class="cv_btn_s"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/recruit/cv_requirement_s.png" alt="募集要項を見る"></a>
 			<a href="<?php echo esc_url(home_url('/')); ?>?page_id=239&post_id=<?php echo $post->ID; ?>" class="cv_btn_s"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/recruit/cv_web-entry_s.png" alt="カンタンWEB応募"></a>
 		</div>
 		<!-- /.cv_s -->
-		
+
 		<?php else: ?>
-		
+
 		<?php endif; ?>
-		
+
 	</div>
 	<!-- /.block_p -->
 

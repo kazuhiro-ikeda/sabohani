@@ -1,6 +1,6 @@
 <article id="page_recruit" class="recruits">
 	<h1 class="firstview">
-		<img class="image block" src="<?php echo get_template_directory_uri(); ?>/assets/img/recruit/main.jpg" alt="株式会社サボハニ クリエイターCOME ON">
+		<img class="image block" src="<?php echo get_template_directory_uri(); ?>/assets/img/recruit/main.png" alt="株式会社サボハニ クリエイターCOME ON">
 		<img class="image_s block" src="<?php echo get_template_directory_uri(); ?>/assets/img/recruit/main_s.jpg" alt="">
 	</h1>
 	<!-- /.firstview -->

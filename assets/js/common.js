@@ -55,10 +55,10 @@ jQuery(function ($) {
 	});
 
 
-	body.on('click', function () {
-		change_sp_nav_close();
-		return false;
-	});
+	// body.on('click', function () {
+	// 	change_sp_nav_close();
+	// 	return false;
+	// });
 
 	$('.c-pagenation a').on('click', function () {
 		change_sp_nav_close();
