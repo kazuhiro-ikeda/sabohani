@@ -1,0 +1,32 @@
+@charset 'utf-8';
+
+$main-orange: #fe5a03;
+
+$pc: 960px; // PC
+$tab: 751px; // タブレット
+$sp: 750px; // スマホ
+
+$en: "Akrobat Bold", sans-serif;
+
+@mixin pc {
+	@media (min-width: $pc) {
+		@content;
+	}
+}
+@mixin tab {
+	@media (max-width: ($pc - 1px)) {
+		@content;
+	}
+}
+@mixin sp {
+	@media (max-width: $sp) {
+		@content;
+	}
+}
+
+//margin
+@mixin last-mb0() {
+	> :last-child {
+		margin-bottom: 0;
+	}
+}

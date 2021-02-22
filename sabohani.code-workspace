@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"workbench.colorCustomizations": {
+			"activityBar.background": "#333", //アクティビティバーの背景色
+			"activityBar.foreground": "#FE5A03", //アイコンの色
+		}
+	}
+}

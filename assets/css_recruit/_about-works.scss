@@ -1,0 +1,276 @@
+@charset "utf-8";
+#page_about-works {
+	margin: 194px 0 0;
+
+	@media (max-width: $viewport) {
+		margin: 15.6vw 0 0;
+	}
+
+	.ttl_about-works {
+		margin: 0 0 60px;
+
+		@media (max-width: $viewport) {
+			margin: 0 0 10vw;
+		}
+	}
+
+	.inner_wrap {
+		width: 980px;
+		margin: 0 auto;
+
+		@media (max-width: $viewport) {
+			width: 100%;
+		}
+
+		.works_sec {
+			margin: 0 0 90px;
+
+			@media (max-width: $viewport) {
+				margin: 0 0 15vw;
+			}
+		}
+
+		.ttl_sub {
+			margin: 0 0 30px;
+
+			@media (max-width: $viewport) {
+				margin: 0 0 5vw;
+			}
+		}
+	}
+}
+
+#works_sec_1 {
+	.inner_contents {
+		background: #fff2db;
+
+		.box {
+			display: flex;
+			display: -ms-flex;
+			justify-content: space-between;
+			align-items: center;
+			background-image: url(../img/about-works/border.png);
+			background-size: 100%;
+			background-repeat: no-repeat;
+			background-position: left top;
+			padding: 20px 30px 20px;
+
+			@media (max-width: $viewport) {
+			    display: block;
+			    justify-content: initial;
+				align-items: initial;
+				background-image: url(../img/about-works/border_s.png);
+				padding: 6vw;
+			}
+
+			&:last-of-type {
+				background-image: url(../img/about-works/border.png), url(../img/about-works/border.png);
+				background-position: left top, left bottom;
+
+				@media (max-width: $viewport) {
+					background-image: url(../img/about-works/border_s.png), url(../img/about-works/border_s.png);
+				}
+			}
+
+			&:nth-of-type(even) {
+				flex-direction: row-reverse;
+			}
+
+			figure {
+				width: 435px;
+
+				@media (max-width: $viewport) {
+					width: 100%;
+					margin: 0 0 3vw;
+				}
+			}
+
+			.text {
+				width: 465px;
+				font-size: 14px;
+				line-height: 1.8;
+
+				@media (max-width: $viewport) {
+					width: 100%;
+					font-size: 3.4vw;
+				}
+			}
+		}
+	}
+}
+
+#works_sec_2 {
+	.flex_staff {
+		width: 990px;
+		margin: 0 auto;
+		display: flex;
+		display: -ms-flex;
+		flex-wrap: wrap;
+
+		@media (max-width: $viewport) {
+			width: 66vw;
+			margin: 0 auto;
+		    display: block;
+			flex-wrap: initial;
+		}
+
+		.icon {
+			display: block;
+			width: 310px;
+			margin: 0 10px 30px;
+
+			@media (max-width: $viewport) {
+				width: 100%;
+				margin: 0 0 5vw;
+			}
+
+			@include btn(.3s, .7);
+		}
+	}
+}
+
+#works_sec_3 {
+	.step {
+		.box {
+			display: flex;
+			display: -ms-flex;
+			justify-content: space-between;
+
+			@media (max-width: $viewport) {
+			    display: block;
+			    justify-content: initial;
+			}
+
+			.ttl_ver {
+				width: 120px;
+
+				@media (max-width: $viewport) {
+					width: 100%;
+				}
+
+				.image {
+					display: block;
+
+					@media (max-width: $viewport) {
+						display: none;
+					}
+				}
+
+				.image_s {
+					display: none;
+
+					@media (max-width: $viewport) {
+						display: block;
+					}
+				}
+			}
+
+			.inner_box {
+				width: calc(100% - 120px);
+				display: flex;
+				display: -ms-flex;
+				justify-content: space-between;
+				align-items: center;
+				background-image: url(../img/about-works/border.png);
+				background-size: 980px;
+				background-repeat: no-repeat;
+				background-position: right top;
+				box-sizing: border-box;
+				padding: 16px;
+
+				@media (max-width: $viewport) {
+				    display: block;
+				    justify-content: initial;
+					align-items: initial;
+					background-image: none;
+					width: 100%;
+					padding: 6vw 6vw 6vw;
+				}
+
+				.data {
+					width:470px;//476
+
+					@media (max-width: $viewport) {
+						width: 100%;
+						margin: 0 0 5vw;
+					}
+
+					.ttl_sub {
+						width: 470px;
+						margin: 0;
+
+						@media (max-width: $viewport) {
+							width: 100%;
+						}
+					}
+
+					.text {
+						font-size: 14px;
+						line-height: 1.6;
+					}
+				}
+
+				figure {
+					width: 350px;
+
+					@media (max-width: $viewport) {
+						width: 84vw;
+						margin: 0 auto;
+					}
+				}
+			}
+
+			&.n1 {
+				background-color: #beffd5;
+
+				.data {
+					width: 476px;
+
+					@media (max-width: $viewport) {
+						width: 100%;
+					}
+				}
+
+				figure {
+					width: 340px;
+
+					@media (max-width: $viewport) {
+						width: 84vw;
+					}
+				}
+			}
+
+			&.n2 {
+				background-color: #ccffc8;
+			}
+
+			&.n3 {
+				background-color: #deffc4;
+			}
+
+			&.n4 {
+				background-color: #f0ffbc;
+			}
+
+			&.n5 {
+				background-color: #f9ffbc;
+			}
+
+			&.n6 {
+				background-color: #feffbc;
+			}
+
+			&.n7 {
+				background-color: #fff9bc;
+
+				figure {
+					margin: 0;
+				}
+			}
+
+			&.n8 {
+				background-color: #ffedbb;
+			}
+		}
+	}
+}

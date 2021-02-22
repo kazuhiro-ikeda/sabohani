@@ -1,0 +1,241 @@
+@charset "utf-8";
+//pages recruit
+.pages_recruit {
+	margin: 194px 0 120px;
+
+	@media (max-width: $viewport) {
+		margin: 15.6vw 0 15vw;
+	}
+
+	.image {
+		@media (max-width: $viewport) {
+			display: none;
+		}
+
+		&.block {
+			display: block;;
+
+			@media (max-width: $viewport) {
+				display: none;
+			}
+		}
+	}
+
+	.image_s {
+		display: none;
+
+		@media (max-width: $viewport) {
+			display: inline;
+		}
+
+		&.block {
+			display: none;
+
+			@media (max-width: $viewport) {
+				display: block;
+			}
+		}
+	}
+
+	.primary {
+		width: 980px;
+		margin: 0 auto 60px;
+		position: relative;
+
+		@media (max-width: $viewport) {
+			width: 100%;
+			margin: 0 0 10vw;
+			padding: 0 0 20vw;
+		}
+
+		&::after {
+		    content: "";
+		    display: block;
+		    width: 389px;
+		    height: 272px;
+		    background-image: url(../img/new-graduate/logo.png);
+		    background-size: 100%;
+		    background-repeat: no-repeat;
+			position: absolute;
+			right: calc(50% - 620px);
+			bottom: 70px;
+			z-index: -1;
+
+			@media (max-width: $viewport) {
+				width: 62vw;
+				height: 44vw;
+				right: initial;
+				left: 3vw;
+				bottom: 0;
+			}
+		}
+
+		.firstview {
+			margin: 0 0 40px;
+
+			@media (max-width: $viewport) {
+				margin: 0 0 5vw;
+			}
+		}
+
+		.text {
+			font-size: 16px;
+			line-height: 2;
+			margin: 0 0 30px;
+
+			@media (max-width: $viewport) {
+				font-size: 3.6vw;
+				margin: 0 6vw 5vw;
+			}
+		}
+
+		.signature {
+			font-size: 16px;
+			font-weight: bold;
+			line-height: 1.5;
+			text-align: right;
+
+			@media (max-width: $viewport) {
+				font-size: 3.6vw;
+				margin: 0 6vw 0;
+			}
+		}
+	}
+
+	.secondary {
+		background-color: #eafbe9;
+		padding: 60px 0 60px;
+
+		@media (max-width: $viewport) {
+			padding: 10vw 0 10vw;
+		}
+
+		.inner_sec {
+			width: 980px;
+			margin: 0 auto;
+
+			@media (max-width: $viewport) {
+				width: 88vw;
+			}
+
+			.ttl_box {
+				background: #156f11;
+				padding: 10px 10px 8px;
+				color: white;
+				font-size: 27px;
+				font-weight: bold;
+				text-align: center;
+				line-height: 1.5;
+				margin: 0 0 30px;
+
+				@media all and (-ms-high-contrast: none) {
+					padding: 16px 10px 8px;
+				}
+
+				@media (max-width: $viewport) {
+					padding: 3vw;
+					font-size: 4.7vw;
+					margin: 0 0 7vw;
+				}
+			}
+
+			.lead {
+				font-size: 18px;
+				line-height: 2;
+				text-align: center;
+				margin: 0 0 40px;
+
+				@media (max-width: $viewport) {
+					font-size: 4vw;
+					margin: 0 0 10vw;
+				}
+			}
+
+			ul {
+				width: 820px;
+				margin: 0 auto;
+				display: flex;
+				display: -ms-flex;
+				justify-content: space-between;
+				flex-wrap: wrap;
+
+				@media (max-width: $viewport) {
+					width: 88vw;
+				    display: block;
+				    justify-content: initial;
+				}
+
+				li {
+					width: 360px;
+					margin: 0 0 40px;
+
+					@media (max-width: $viewport) {
+						width: 100%;
+						margin: 0 0 10vw;
+
+						&:last-of-type {
+							margin: 0;
+						}
+					}
+
+					.ttl_icon {
+						text-align: center;
+						margin: 0 0 20px;
+
+						@media (max-width: $viewport) {
+							margin: 0 0 3vw;
+						}
+
+						img {
+							width: 145px;
+
+							@media (max-width: $viewport) {
+								width: 34vw;
+							}
+						}
+
+						.inner_text {
+							display: block;
+							text-align: center;
+							font-size: 20px;
+							font-weight: bold;
+							margin: 10px 0 0;
+
+							@media (max-width: $viewport) {
+								font-size: 4.4vw;
+								margin: 2vw 0 0;
+							}
+						}
+					}
+
+					.text {
+						font-size: 16px;
+						line-height: 1.5;
+
+						@media (max-width: $viewport) {
+							font-size: 4vw;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.requirement_sec {
+		padding: 60px 0 0;
+
+		@media (max-width: $viewport) {
+			padding: 10vw 0 0;
+		}
+
+		.ttl {
+			width: 980px;
+			margin: 0 auto 60px;
+
+			@media (max-width: $viewport) {
+				width: 88vw;
+				margin: 0 auto 5vw;
+			}
+		}
+	}
+}

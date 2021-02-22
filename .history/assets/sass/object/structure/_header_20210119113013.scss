@@ -1,0 +1,259 @@
+/*
+---------------------------------------
+header
+---------------------------------------
+*/
+
+.st-header {
+	@include sp {
+		height: 72px;
+		position: fixed;
+		width: 100%;
+		left: 0;
+		top: 0;
+		z-index: 10;
+		background: #fff;
+		display: -ms-flexbox;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+.st-header__logo {
+	display: none;
+
+	@include sp {
+		display: block;
+		text-align: center;
+		width: 64px;
+		margin-left: 1.5rem;
+	}
+}
+
+.st-header__recruit {
+	position: fixed;
+	right: 12.5rem;
+	top: 3rem;
+	z-index: 99;
+
+	@include sp {
+		right: 1rem;
+		top: 0.6rem;
+		width: 81px;
+	}
+}
+
+.st-header__navWrap {
+	padding: 2.3rem 2rem;
+
+	@include sp {
+		padding: 2rem 1.8rem;
+	}
+}
+
+.st-header__nav__ttl {
+	font-size: 1.3rem;
+	font-weight: bold;
+	padding-bottom: 2.4rem;
+
+	@include sp {
+		padding-bottom: 1rem;
+	}
+}
+
+.st-header__globalNav {
+	li {
+		transition: all 0.2s;
+		padding-bottom: 0.2rem;
+
+		@include sp {
+			padding: 0 0 0.5rem;
+		}
+	}
+}
+
+.st-header__globalNav__link {
+	display: block;
+}
+
+.st-header__globalNav__txt {
+	display: block;
+	font-size: 1.5rem;
+	font-weight: bold;
+
+	@include sp {
+		font-size: 3.2vw;
+	}
+}
+
+/* sp-btn */
+
+#sp-btn {
+	position: fixed;
+	z-index: 99999999999;
+	top: 3.5rem;
+	right: 3.5rem;
+	display: -ms-flexbox;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 68px;
+	height: 68px;
+	transition: all 0.2s;
+	background: $main-orange;
+
+	@include sp {
+		width: 57px;
+		height: 57px;
+		right: 1rem;
+		top: 8.5rem;
+	}
+
+	&:before {
+		content: "MENU";
+		position: absolute;
+		top: 2rem;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+		transform: translateY(-50%);
+		display: block;
+		font-size: 1.5rem;
+		font-weight: bold;
+		text-align: center;
+		color: #fff;
+		transition: all 0.2s;
+
+		@include sp {
+			font-size: 1rem;
+			top: 1.5rem;
+		}
+	}
+
+	span {
+		width: 42px;
+		height: 5px;
+		background: #fff;
+
+		@include sp {
+			width: 34px;
+		}
+
+		&:not(:last-child) {
+			margin-bottom: 6px;
+
+			@include sp {
+				margin-bottom: 5px;
+			}
+		}
+	}
+
+	&.active {
+		&:before {
+			opacity: 0;
+		}
+
+		#sp-btn-a {
+			margin-top: 1rem;
+		}
+	}
+}
+
+#sp-btn #sp-btn-a,
+#sp-btn #sp-btn-a span {
+	display: inline-block;
+	box-sizing: border-box;
+}
+
+#sp-btn #sp-btn-a {
+	display: block;
+	display: -ms-flexbox;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-end;
+	width: 42px;
+	height: 30px;
+	background: none;
+	margin-top: 2rem;
+
+	@include sp {
+		width: 34px;
+	}
+}
+
+#sp-btn #sp-btn-a:hover {
+	opacity: 1;
+}
+
+#sp-btn.active span:nth-of-type(1) {
+	-webkit-transform: translateY(0px) rotate(-45deg);
+	transform: translateY(0px) rotate(-45deg);
+	width: 23px;
+	height: 3px;
+
+	@include sp {
+		width: 19px;
+	}
+}
+
+#sp-btn.active span:nth-of-type(2) {
+	opacity: 0;
+}
+
+#sp-btn.active span:nth-of-type(3) {
+	width: 100%;
+	-webkit-transform: translateY(-20px) rotate(45deg);
+	transform: translateY(-20px) rotate(45deg);
+	width: 23px;
+	height: 3px;
+
+	@include sp {
+		width: 19px;
+		-webkit-transform: translateY(-18px) rotate(45deg);
+		transform: translateY(-18px) rotate(45deg);
+	}
+}
+
+/* g-anv */
+
+#g-nav {
+	position: fixed;
+	top: 3.5rem;
+	right: 3.5rem;
+	z-index: 9999999;
+	display: block;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	height: 300px;
+	transition: all 0.3s;
+	background: $main-orange;
+	-webkit-overflow-scrolling: touch;
+	overflow-scrolling: touch;
+	color: #fff;
+	width: 0;
+	opacity: 0;
+
+	// width: 200px;
+	// opacity: 1;
+
+	@include sp {
+		right: 1rem;
+		top: 8.5rem;
+		height: 255px;
+
+		// width: 162px;
+	}
+
+	&.active {
+		width: 200px;
+		opacity: 1;
+
+		@include sp {
+			width: 162px;
+		}
+	}
+}

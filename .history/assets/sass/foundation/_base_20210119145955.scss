@@ -1,0 +1,264 @@
+.wrapper {
+	position: relative;
+	overflow: hidden;
+	min-width: 1200px;
+
+	@media (max-width: 768px) {
+		min-width: 0;
+		margin-top: 0;
+	}
+}
+
+body {
+	font-family: "游ゴシック", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+	font-weight: 400;
+	text-justify: inter-ideograph;
+	word-wrap: break-word;
+	// word-break: keep-all;
+	color: #202020;
+	min-width: 375px;
+	// font-feature-settings : "palt";
+	// letter-spacing: .2em;
+}
+
+@media screen and (max-width: 1020px) {
+	body {
+		width: 1040px;
+	}
+}
+
+@include sp {
+	body {
+		width: 100%;
+	}
+}
+
+/* IE */
+@media all and (-ms-high-contrast: none) {
+	body {
+		font-family: "游ゴシック", YuGothic, "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	}
+}
+
+p {
+	// text-align: justify;
+	line-break: strict;
+	overflow-wrap: break-word;
+}
+
+p,
+dt,
+dd,
+li {
+	font-size: 1.6rem;
+	line-height: 2;
+
+	@include sp {
+		font-size: 3.2vw;
+	}
+}
+
+/*
+----------------------------------------
+flex
+----------------------------------------
+*/
+
+.flex {
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: stretch;
+
+	-js-display: flex;
+}
+
+.flex.nowrap {
+	flex-wrap: nowrap;
+}
+
+.flex.reverse {
+	flex-direction: row-reverse;
+}
+
+.flex.item-center {
+	align-items: center;
+}
+
+.flex-column {
+	display: -ms-flexbox;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+/*
+---------------------------------------
+link
+---------------------------------------
+*/
+
+a {
+	font-size: inherit;
+	font-weight: inherit;
+	text-decoration: none;
+	color: inherit;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+/*
+---------------------------------------
+clear
+---------------------------------------
+*/
+
+.clearfix:after {
+	font-size: 0;
+	display: block;
+	visibility: hidden;
+	clear: both;
+	height: 0;
+	content: ".";
+}
+
+.clearfix {
+	min-height: 1px;
+}
+
+* html .clearfix {
+	height: 1px;
+	/*\*/ /*/
+    height: auto;
+    overflow: hidden;
+    /**/
+}
+
+*:first-child + html .clearfix {
+	zoom: 1;
+} /* IE7 */
+
+/*
+---------------------------------------
+common
+---------------------------------------
+*/
+
+.pc {
+	display: block !important;
+	margin: 0 auto;
+
+	@include sp {
+		display: none !important;
+	}
+}
+
+.sp {
+	display: none !important;
+
+	@include sp {
+		display: block !important;
+	}
+}
+
+.inline-pc {
+	display: inline-block !important;
+
+	@include sp {
+		display: none !important;
+	}
+}
+.inline-sp {
+	display: none !important;
+
+	@include sp {
+		display: inline-block !important;
+	}
+}
+
+.inner {
+	max-width: 1080px;
+	margin: 0 auto;
+	padding: 0 20px;
+	word-wrap: break-word;
+	word-break: break-all;
+
+	@include sp {
+		padding: 0 7%;
+	}
+}
+
+span {
+	font-size: inherit;
+	font-weight: inherit;
+}
+
+.img {
+	line-height: 0;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.en {
+	font-family: "Roboto", sans-serif;
+}
+
+.center {
+	text-align: center;
+}
+
+.bold {
+	font-weight: 600;
+}
+
+.trans {
+	transition: all 0.2s;
+}
+
+input[type="text"],
+input[type="search"],
+input[type="tel"],
+input[type="number"],
+input[type="url"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+textarea,
+select {
+	font-size: 16px;
+	border: none;
+	border-radius: 0;
+	box-shadow: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	box-sizing: border-box;
+	font-family: inherit;
+	background: #e2e2e2;
+}
+
+textarea {
+	width: 100%;
+	height: 162px;
+	resize: vertical;
+	box-shadow: none;
+
+	@include sp {
+		height: 150px;
+	}
+}
+
+input::-webkit-input-placeholder {
+	color: #989898;
+}
+
+input:-moz-placeholder {
+	color: #989898;
+}

@@ -1,0 +1,69 @@
+/*
+---------------------------------------
+footer
+--------------------------------------
+*/
+
+.st-footer {
+	width: 100%;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	z-index: 999;
+	background: #fff;
+	padding: 3.2rem 2.8rem 1.5rem 3rem;
+	display: -ms-flexbox;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	@include sp {
+		padding: 1rem 5%;
+	}
+}
+
+.st-footer__logo {
+	@include sp {
+		display: none;
+	}
+}
+
+.st-footer__address {
+	display: -ms-flexbox;
+	display: flex;
+
+	@include sp {
+		width: 100%;
+	}
+}
+
+.address__company {
+	&.item-01 {
+		margin-right: 3rem;
+
+		@include sp {
+			margin-right: 6vw;
+		}
+	}
+}
+
+.address__company__ttl {
+	padding-bottom: 0.5rem;
+
+	img {
+		@include sp {
+			width: auto;
+			height: 3.4vw;
+		}
+	}
+}
+
+.address__company__txt {
+	font-size: 1.3rem;
+	color: #7d7d7d;
+	line-height: 1.4;
+
+	@include sp {
+		font-size: 2.8vw;
+	}
+}

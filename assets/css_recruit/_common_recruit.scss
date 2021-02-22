@@ -1,0 +1,28 @@
+$viewport: 750px;
+$base: #333;
+$insert: #799ECB;
+$toggle: #799ECB;
+
+@mixin svg($x_number: 200px, $y_number: 30px) {
+	img {
+		width: $x_number;
+		height: $y_number;
+
+		@media (max-width: $viewport) {
+			width: 100%;
+			height: auto;
+		}
+	}
+}
+
+@mixin btn($seconds: .3s, $opacity: .5) {
+	transition: all $seconds;
+
+	&:hover {
+		opacity: $opacity;
+
+		@media (max-width: $viewport) {
+			opacity: 1;
+		}
+	}
+}

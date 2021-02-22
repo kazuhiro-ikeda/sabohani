@@ -1,0 +1,86 @@
+/*
+---------------------------------------
+footer
+--------------------------------------
+*/
+
+.st-footer {
+	width: 100%;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	z-index: 999;
+	background: #fff;
+	padding: 3.2rem 2.8rem 1.5rem 3rem;
+	display: -ms-flexbox;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	@include sp {
+		display: none;
+	}
+}
+
+.st-footer__logo {
+	@include sp {
+		display: none;
+	}
+}
+
+.st-footer__address {
+	display: -ms-flexbox;
+	display: flex;
+
+	@include sp {
+		width: 100%;
+		display: block;
+		margin-top: 3.7vw;
+		padding: 5vw 0 3vw;
+		border-top: 1px solid #fff;
+	}
+}
+
+.address__company {
+	&.item-01 {
+		margin-right: 3rem;
+
+		@include sp {
+			margin-right: 0;
+			padding-bottom: 3.5vw;
+		}
+	}
+}
+
+.address__company__ttl {
+	padding-bottom: 0.5rem;
+
+	img {
+		@include sp {
+			width: auto;
+			height: 13px;
+		}
+	}
+
+	span {
+		@include sp {
+			display: block;
+			font-size: 3.4vw;
+			font-weight: bold;
+			font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", sans-serif;
+			white-space: nowrap;
+		}
+	}
+}
+
+.address__company__txt {
+	font-size: 1.3rem;
+	color: #7d7d7d;
+	line-height: 1.4;
+
+	@include sp {
+		font-size: 11px;
+		color: #fff;
+		white-space: nowrap;
+	}
+}
